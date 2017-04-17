@@ -12,7 +12,7 @@ rm(list = ls()) #remove everything from enviorment
 
 library(dplyr)
 cat("\"",getSrcDirectory(function(dummy) {dummy}),"\"",sep="") #get folderpath of script
-folderpath<-"/Users/Havard/Documents/Mitt liv i bilder/Volume I/Statistikk"
+folderpath<-"/Users/"
 temp<-read.csv(paste0(folderpath,"/out.txt"),stringsAsFactors = F)
 df<-read.csv(paste0(folderpath,"/out2.txt"),stringsAsFactors = F)
 df<-rbind(temp,df)
